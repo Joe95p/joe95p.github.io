@@ -13,6 +13,14 @@ body {
     color: green; /* Set text color to green */
 }
 
+h1 {
+color: #00FF41;
+font-family: arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
