@@ -10,7 +10,7 @@ body {
     padding: 0; /* Remove default padding */
     height: 100%; /* Ensure body takes up full viewport height */
     background-color: black; /* Set background color to black */
-    color: green; /* Set text color to green */
+    color: #00FF41; /* Set text color to green */
 }
 
 h1 {
