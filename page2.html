@@ -3,15 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Management View</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .back-link {
+            display: block;
+            margin: 2rem 0;
+            text-align: center;
+            font-weight: bold;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test4</h1>
- <div id="Container"
-     style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-     <iframe allowfullscreen id="ViostreamIframe" width="100%" height="100%" src="https://safaritelecom.my-prtg.com/public/mapshow.htm?id=14659&mapid=A845E49C-6F7A-46C4-B367-38B8AF310FB1" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0"></iframe>
-</div>
-    <a href="index.html">Back to Home</a>
+    <header>
+        <h1>Management View</h1>
+    </header>
+    <div class="content">
+        <div class="iframe-container">
+            <iframe allowfullscreen id="ViostreamIframe" src="https://safaritelecom.my-prtg.com/public/mapshow.htm?id=5190&mapid=B8E14014-15A5-4FF8-B9D7-F0347B9704AE"></iframe>
+        </div>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Network Engineer Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
