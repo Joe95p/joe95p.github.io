@@ -28,17 +28,23 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .iframe-container {
+        #wrap {
             width: 100%;
             height: 100%;
+            padding: 0;
             overflow: hidden;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            transform: scale(0.5); /* Adjust the scale to fit the content */
+        #scaled-frame {
+            width: 200%;
+            height: 200%;
+            border: 0px;
+            transform: scale(0.5);
             transform-origin: 0 0;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            #scaled-frame {
+                zoom: 1;
+            }
         }
         .back-link {
             display: block;
@@ -65,8 +71,8 @@
         <h1>Management View</h1>
     </header>
     <div class="content">
-        <div class="iframe-container">
-            <iframe allowfullscreen src="https://safaritelecom.my-prtg.com/public/mapshow.htm?id=5190&mapid=B8E14014-15A5-4FF8-B9D7-F0347B9704AE"></iframe>
+        <div id="wrap">
+            <iframe id="scaled-frame" src="https://safaritelecom.my-prtg.com/public/mapshow.htm?id=5190&mapid=B8E14014-15A5-4FF8-B9D7-F0347B9704AE"></iframe>
         </div>
         <a href="index.html" class="back-link">Back to Home</a>
     </div>
