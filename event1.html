@@ -27,6 +27,8 @@
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
         }
         nav {
             margin-bottom: 2rem;
@@ -51,7 +53,7 @@
         }
         .iframe-container {
             width: 100%;
-            height: calc(100vh - 300px); /* Adjust the height based on header, footer, and other content */
+            flex: 1;
             overflow: hidden;
         }
         .iframe-container iframe {
@@ -77,7 +79,7 @@
                 margin: 0.5rem 0;
             }
             .iframe-container {
-                height: calc(100vh - 250px); /* Adjust for smaller screens */
+                height: 50vh; /* Set a fixed height for smaller screens */
             }
         }
     </style>
