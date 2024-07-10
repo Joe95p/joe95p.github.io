@@ -51,7 +51,8 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            height: 70vh; /* Adjust the height based on your needs */
+            margin-bottom: 2rem;
         }
         .iframe-container iframe {
             position: absolute;
@@ -66,9 +67,12 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+        }
+        @media (max-width: 768px) {
+            .iframe-container {
+                height: 50vh; /* Adjust the height for mobile */
+            }
         }
     </style>
 </head>
@@ -79,7 +83,7 @@
     <nav>
         <ul>
             <li><a href="remaining_events.html">Remaining Events</a></li>
-            <li><a href="management_view.html">Managment View</a></li>
+            <li><a href="management_view.html">Management View</a></li>
             <li><a href="page3.html">Test 4</a></li>
             <li><a href="network_technician.html">Network Technician</a></li>
         </ul>
