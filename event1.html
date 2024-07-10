@@ -31,10 +31,11 @@
             list-style: none;
             padding: 0;
             display: flex;
+            flex-wrap: wrap; /* Ensure flex items wrap to new lines if necessary */
             justify-content: center;
         }
         nav ul li {
-            margin: 0 1rem;
+            margin: 0.5rem 1rem;
         }
         nav ul li a {
             color: #4CAF50;
@@ -49,9 +50,19 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+            position: relative; /* Change from fixed to relative */
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding: 1rem;
+            }
+            nav ul {
+                flex-direction: column; /* Stack navigation items vertically */
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
         }
     </style>
 </head>
