@@ -12,7 +12,7 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            overflow-x: hidden;
+            overflow: hidden;
         }
         header {
             background-color: #4CAF50;
@@ -21,15 +21,19 @@
             text-align: center;
         }
         .content {
-            padding: 0 2rem 2rem 2rem;
-            max-width: 1200px;
+            padding: 0;
             margin: 0 auto;
+            height: calc(100vh - 100px); /* Adjust based on header/footer height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .iframe-container {
             position: relative;
             width: 100%;
-            height: calc(100vh - 150px); /* Adjust the height based on header and footer */
+            height: 100%;
             overflow: hidden;
+            flex-grow: 1;
         }
         .iframe-container iframe {
             position: absolute;
@@ -38,12 +42,12 @@
             width: 100%;
             height: 100%;
             border: 0;
-            transform: scale(0.5); /* Adjust the scale to fit the content */
+            transform: scale(2.5); /* Adjust the scale to fit the content */
             transform-origin: 0 0;
         }
         .back-link {
             display: block;
-            margin: 2rem 0;
+            margin: 0 auto 1rem;
             text-align: center;
             font-weight: bold;
             color: #4CAF50;
@@ -58,8 +62,6 @@
             text-align: center;
             padding: 1rem 0;
             width: 100%;
-            position: fixed;
-            bottom: 0;
         }
     </style>
 </head>
