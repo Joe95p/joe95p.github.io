@@ -23,32 +23,20 @@
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
-        }
-        .iframe-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            margin-bottom: 2rem;
-        }
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        .back-link {
-            display: block;
-            margin: 2rem 0;
             text-align: center;
-            font-weight: bold;
-            color: #4CAF50;
-            text-decoration: none;
         }
-        .back-link:hover {
-            text-decoration: underline;
+        .external-link {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .external-link:hover {
+            background-color: #45a049;
         }
         footer {
             background: #333;
@@ -66,10 +54,8 @@
         <h1>Safari Events</h1>
     </header>
     <div class="content">
-        <div class="iframe-container">
-            <iframe src="https://app.getguru.com/collections/lxd89/Safari-Events" frameborder="0"></iframe>
-        </div>
-        <a href="events.html" class="back-link">Back to Events</a>
+        <a href="https://app.getguru.com/collections/lxd89/Safari-Events" class="external-link" target="_blank">View Safari Events on Guru</a>
+        <a href="events.html" class="external-link">Back to Events</a>
     </div>
     <footer>
         <p>&copy; 2024 Network Engineer Hub. All rights reserved.</p>
