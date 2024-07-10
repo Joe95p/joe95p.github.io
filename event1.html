@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -20,6 +23,7 @@
             text-align: center;
         }
         .content {
+            flex: 1;
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
@@ -31,7 +35,7 @@
             list-style: none;
             padding: 0;
             display: flex;
-            flex-wrap: wrap; /* Ensure flex items wrap to new lines if necessary */
+            flex-wrap: wrap;
             justify-content: center;
         }
         nav ul li {
@@ -51,14 +55,13 @@
             text-align: center;
             padding: 1rem 0;
             width: 100%;
-            position: relative; /* Change from fixed to relative */
         }
         @media (max-width: 768px) {
             .content {
                 padding: 1rem;
             }
             nav ul {
-                flex-direction: column; /* Stack navigation items vertically */
+                flex-direction: column;
             }
             nav ul li {
                 margin: 0.5rem 0;
@@ -79,6 +82,7 @@
                 <li><a href="ap_deploy_event1.html">AP Deploy</a></li>
             </ul>
         </nav>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/app2c44EANdVW0CuG/shr4NbkBHA5CqsrEF?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
         <a href="events.html">Back to Events</a>
     </div>
     <footer>
