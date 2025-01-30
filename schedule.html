@@ -14,16 +14,30 @@
         h2 {
             text-align: center;
         }
-        .iframe-container {
+        .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .calendar {
+            width: 48%; /* Adjust size */
+            min-width: 500px;
         }
         iframe {
-            width: 90%;
-            height: 500px;
+            width: 100%;
+            height: 600px; /* Adjust height */
             border: 1px solid #ccc;
+        }
+        @media (max-width: 1200px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .calendar {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -31,12 +45,16 @@
 
     <h2>Outlook Schedules</h2>
     
-    <div class="iframe-container">
-        <h3>Schedule 1</h3>
-        <iframe src="https://outlook.office365.com/owa/calendar/4783db8f6e88402db1ae943a10d90011@safari-solutions.com/8f23225895e14ae6b9292e88b703b89213156878689787898975/calendar.html" allowfullscreen></iframe>
+    <div class="container">
+        <div class="calendar">
+            <h3>Schedule 1</h3>
+            <iframe src="https://outlook.office365.com/owa/calendar/4783db8f6e88402db1ae943a10d90011@safari-solutions.com/8f23225895e14ae6b9292e88b703b89213156878689787898975/calendar.html" allowfullscreen></iframe>
+        </div>
 
-        <h3>Schedule 2</h3>
-        <iframe src="PASTE_SECOND_OUTLOOK_SCHEDULE_URL_HERE" allowfullscreen></iframe>
+        <div class="calendar">
+            <h3>Schedule 2</h3>
+            <iframe src="PASTE_SECOND_OUTLOOK_SCHEDULE_URL_HERE" allowfullscreen></iframe>
+        </div>
     </div>
 
 </body>
